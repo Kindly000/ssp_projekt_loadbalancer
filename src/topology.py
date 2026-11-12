@@ -7,18 +7,18 @@ from mininet.log import setLogLevel
 
 class MinimalThreeTierTopo(Topo):
     def build(self):
-        c1 = self.addSwitch("c1", protocols="OpenFlow13")
-        c2 = self.addSwitch("c2", protocols="OpenFlow13")
+        c1 = self.addSwitch("c1", dpid="0000000000000001", protocols="OpenFlow13")
+        c2 = self.addSwitch("c2", dpid="0000000000000002", protocols="OpenFlow13")
 
-        a1 = self.addSwitch("a1", protocols="OpenFlow13")
-        a2 = self.addSwitch("a2", protocols="OpenFlow13")
-        e1 = self.addSwitch("e1", protocols="OpenFlow13")
+        a1 = self.addSwitch("a1", dpid="0000000000000003", protocols="OpenFlow13")
+        a2 = self.addSwitch("a2", dpid="0000000000000004", protocols="OpenFlow13")
+        e1 = self.addSwitch("e1", dpid="0000000000000005", protocols="OpenFlow13")
         h1 = self.addHost("h1", ip="10.0.0.1/24")
         h2 = self.addHost("h2", ip="10.0.0.2/24")
 
-        a3 = self.addSwitch("a3", protocols="OpenFlow13")
-        a4 = self.addSwitch("a4", protocols="OpenFlow13")
-        e2 = self.addSwitch("e2", protocols="OpenFlow13")
+        a3 = self.addSwitch("a3", dpid="0000000000000006", protocols="OpenFlow13")
+        a4 = self.addSwitch("a4", dpid="0000000000000007", protocols="OpenFlow13")
+        e2 = self.addSwitch("e2", dpid="0000000000000008", protocols="OpenFlow13")
         h3 = self.addHost("h3", ip="10.0.0.3/24")
         h4 = self.addHost("h4", ip="10.0.0.4/24")
 
