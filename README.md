@@ -72,3 +72,8 @@
 
 
   * Praca ogranicza się wyłącznie do samej detekcji *elephant flows* i nie definiuje algorytmu trasowania ani ochrony pakietów TCP przed zmianą kolejności.
+
+
+## Topologia
+[OPIS TODO]
+![](/src/topology-schema.jpg)
