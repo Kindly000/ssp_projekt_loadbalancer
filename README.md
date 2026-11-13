@@ -75,5 +75,7 @@
 
 
 ## Topologia
-[OPIS TODO]
+
+Środowisko testowe bazuje na trójwarstwowej topologii typu Fat-Tree (Core `c1`–`c2`, Aggregation `a1`–`a4`, Edge `e1`–`e2`) z czterema hostami końcowymi (`h1`–`h4`), zaprojektowanej w emulatorze Mininet pod kątem eliminacji pojedynczych wąskich gardeł. Wyłączenie protokołu STP oraz centralne sterowanie przez kontroler Ryu odblokują nam możliwość wykorzystania wszystkich równoległych ścieżek pomiędzy strefami klienckimi (`h1`-`h2`) i serwerowymi (`h3`-`h4`). Dzięki temu przełączniki na trasie pakietów dysponują wieloma alternatywnymi łączami zarówno w górę, jak i w dół, co pozwala dynamicznie rozpraszać ruch *elephant flows* bez jakiejkolwiek ingerencji w systemy operacyjne hostów.
+
 ![](/src/topology-schema.jpg)
