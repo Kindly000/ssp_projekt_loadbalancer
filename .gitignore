@@ -1,0 +1,12 @@
+﻿# Lokalne skrypty i konfiguracja srodowiska (WSL2 / Windows / VM)
+local_env/
+ryu_mininet_setup.md
+setup_ryu_proxy.ps1
+
+# Typowe smieci Pythona / edytorow
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+
+.env
